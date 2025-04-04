@@ -1,4 +1,5 @@
 # HACKATHON-CHALLENGE
+<<<<<<< HEAD
 MY PORTFOLIO
 # 🌍 GIS , Geology & Tech Portfolio
 
@@ -31,3 +32,6 @@ A responsive portfolio showcasing my geospatial analysis projects, technical ski
 - LinkedIn: www.linkedin.com/in/antonet-chepkoech-03990623a 
 - GitHub: https://github.com/Chepkoech21-beep  
 
+=======
+PORTFOLIO
+>>>>>>> dc19d1a72dbde0261f34c742e458af5ec28f4dda
