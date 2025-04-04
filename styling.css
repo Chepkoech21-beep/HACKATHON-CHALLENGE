@@ -1,0 +1,194 @@
+/* ==== Nude Cool Color Palette ==== */
+:root {
+    --nude: #F5E9E0;        
+    --taupe: #D8C4B8;       
+    --mocha: #A38F84;       
+    --slate: #4A4A4A;      
+    --clay: #BFA393;        
+    --dusty-rose: #C7A9A1;  
+  }
+  .profile-pic {
+    width: 200px;          /* Fixed width */
+    height: 200px;         /* Match height to width for circle */
+    object-fit: cover;     /* Ensures image fills space without stretching */
+    border-radius: 50%;    /* Makes it circular */
+    border: 3px solid #A38F84;  /* Nude-cool border  */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    display: block;        
+    margin: 0 auto;        /* Centers the image */
+  }
+  
+  /* Optional hover effect */
+  .profile-pic:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+  }
+  
+  /* ==== Base Styles ==== */
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--nude);
+    color: var(--slate);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  /* ===== IMAGE SIZING ===== */
+
+
+/* Base image styles (applies to all images) */
+img {
+  max-width: 60%; /* Ensures responsiveness */
+  height: 60%;    /* Maintains aspect ratio */
+  display: block;  /* Removes extra space below */
+}
+
+/* Project image specific sizing */
+.project-image {
+  border-radius: 8px;       /* Soft rounded corners */
+  object-fit: cover;        /* Crops images uniformly */
+  margin-bottom: 1rem;      /* Space below image */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Size variations (use these classes in HTML) */
+.standard-size {
+  width: 100%;  /* Full container width */
+  height: 200px; /* Fixed height */
+}
+
+.large-size {
+  width: 100%;
+  height: 300px; /* For featured projects */
+}
+
+.small-size {
+  width: 150px;  /* For logos/thumbnails */
+  height: 150px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .standard-size, 
+  .large-size {
+    height: 150px; /* Shorter on mobile */
+  }
+}
+/* Project image specific sizing */
+.project-image {
+  border-radius: 8px;       /* Soft rounded corners */
+  object-fit: cover;        /* Crops images uniformly */
+  margin-bottom: 1rem;      /* Space below image */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Size variations (use these classes in HTML) */
+.standard-size {
+  width: 100%;  /* Full container width */
+  height: 200px; /* Fixed height */
+}
+
+.large-size {
+  width: 100%;
+  height: 300px; /* For featured projects */
+}
+
+.small-size {
+  width: 150px;  /* For logos/thumbnails */
+  height: 150px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .standard-size, 
+  .large-size {
+    height: 150px; /* Shorter on mobile */
+  }
+}
+  
+  /* ==== Technical Skills Section ==== */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 1.5rem;
+  }
+  
+  .skill {
+    background: var(--taupe);
+    color: var(--slate);
+    padding: 0.6rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(163, 143, 132, 0.2);
+  }
+  
+  .skill:hover {
+    background: var(--clay);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(163, 143, 132, 0.1);
+  }
+  
+  /* ==== Footer ==== */
+  footer {
+    background: var(--taupe);
+    color: var(--slate);
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(163, 143, 132, 0.3);
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+  
+  footer a {
+    color: var(--slate);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 0.8rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px dashed var(--mocha);
+  }
+  
+  footer a:hover {
+    color: var(--dusty-rose);
+    border-bottom-color: var(--dusty-rose);
+  }
+  
+  .social-links {
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+  }
+  
+  /* ==== Nude Theme Extras ==== */
+  .project-card {
+    background: white;
+    border: 1px solid var(--taupe);
+  }
+  
+  .btn {
+    background: var(--mocha);
+    color: white;
+  }
+  
+  .btn:hover {
+    background: var(--clay);
+  }
+  
+  /* ==== Mobile Responsiveness ==== */
+  @media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    footer a {
+      margin: 0 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
