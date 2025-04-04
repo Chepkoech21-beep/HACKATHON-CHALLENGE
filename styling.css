@@ -7,6 +7,22 @@
     --clay: #BFA393;        
     --dusty-rose: #C7A9A1;  
   }
+  .profile-pic {
+    width: 200px;          /* Fixed width */
+    height: 200px;         /* Match height to width for circle */
+    object-fit: cover;     /* Ensures image fills space without stretching */
+    border-radius: 50%;    /* Makes it circular */
+    border: 3px solid #A38F84;  /* Nude-cool border  */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    display: block;        
+    margin: 0 auto;        /* Centers the image */
+  }
+  
+  /* Optional hover effect */
+  .profile-pic:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+  }
   
   /* ==== Base Styles ==== */
   body {
@@ -19,8 +35,6 @@
   }
   /* ===== IMAGE SIZING ===== */
 
-/* Base image styles (applies to all images) */
-/* ===== IMAGE SIZING ===== */
 
 /* Base image styles (applies to all images) */
 img {
